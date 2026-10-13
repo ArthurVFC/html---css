@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>os links levam a outras páginas</h1>
+    <p><a href="index.html">página 1</a></p><p><a href="p2.html">página 2</a></p> <p><a href="p3.html"> página 3</a></p> <p><a href="p4.html"> página 4</a></p> <p><a href="p5.html">página 5</a></p><p><a href="p6.html">página 6</a></p> <p><a href="p7.html"> página 7</a></p> <p><a href="p8.html"> página 8</a></p> <p><a href="p9.html"> página 9</a></p> <p><a href="p10.html"> página 10</a></p>
+    <h1>Imagem dinâmica</h1>
+<p>Tente abrir esse site em varios dispositivos diferentes ou
+simplesmente aumente e diminua o tamanho do seu navegador .</p>
+
+<picture>
+<source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+<source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+<img src="imagens/foto-g.png" alt="Imagem flexível">
+</picture>
+
+<h1>Reproduzindo Audio</h1>
+<p>Vamos aprender a reproduzir audios em HTML5 .</p> <audio preload="metadata" autoplay controls loop>
+    <!--"metadata" só carrega o nome e a duração do áudio, ele só baixa o arquivo se o usuário interagir-->
+<!--"loop" reinicia o áudio infinitamente caso ele termine-->
+<!--carrega o tipo de áudio por prioridade (cima pra baixo em caso de incompatibilidade)-->
+<source src="sons/Rimeblood_Hati _Greatwolf_Skoll-Archthrones_OST.mp3" type="audio/mpeg">
+<source src="sons/Rimeblood_Hati _Greatwolf_Skoll-Archthrones_OST.ogg" type="audio/ogg">
+<source src="sons/Rimeblood_Hati _Greatwolf_Skoll-Archthrones_OST.wav" type="audio/wav"> <!--evite arquivos "wav" (muito pesado)-->
+<p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="sons/Rimeblood_Hati _Greatwolf_Skoll-Archthrones_OST.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+</audio>
+<p>Vídeo</p><!--EXEMPLO ABAIXO, REAL MAIS EMBAIXO (melhor)-->
+<!--<video src="vídeos/idiota.mp4" width="500" controls></video>-->
+
+<video width="560" poster="fotos/retardado.png" controls autoplay loop> <!--Foto personalizada pra uma capa de vídeo-->>
+    <!--carrega o tipo de vídeo por prioridade (cima pra baixo em caso de incompatibilidade)-->
+<source src="vídeos/idiota.mp4" type="video/mp4">
+<source src="vídeos/idiota.m4v" type="video/mp4">
+<source src="vídeos/idiota.webm" type="video/webm">
+<source src="vídeos/idiota.ogv" type="video/ogg">
+<p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+</video>
+<br>
+<p>Inserindo vídeos do youtube</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=yps7biH7e0iDdS95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

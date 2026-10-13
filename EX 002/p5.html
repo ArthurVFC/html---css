@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+    div {
+    display: inline-block;
+    background-color:lightgray;
+    border: 1px solid Oblack;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    }
+    /*HOVER: quando tocar na div ela vai fazer uma interação*/
+    div:hover {
+    background-color: yellow;
+    }
+
+
+
+    /*PARTE DO TEXTO ESCONDIDO*/
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    div > p {
+    display: none;
+    }
+    div:hover > p {
+    display: block;
+    color: white;
+    background-color: red;
+    width: 300px;
+    }
+    
+    div:hover {
+    color:red;
+    }
+    </style>
+    </head>
+    <body>
+        <h1>os links levam a outras páginas</h1>
+    <p><a href="index.html">página 1</a></p><p><a href="p2.html">página 2</a></p> <p><a href="p3.html"> página 3</a></p> <p><a href="p4.html"> página 4</a></p> <p><a href="p5.html">página 5</a></p><p><a href="p6.html">página 6</a></p> <p><a href="p7.html"> página 7</a></p> <p><a href="p8.html"> página 8</a></p> <p><a href="Site/p9.html"> página 9</a></p>
+
+        <div id="d1">01</div>
+        <div id="d2">02</div>
+        <div id="d3">03</div>
+
+        
+        <!--PARTE DO TEXTO ESCONDIDO-->
+        <h1>exemplo de hover</h1>
+        <p>passe o mouse no texto abaixo</p>
+        <div>passe o mouse aqui
+            <p>TEXTO ESCONDIDO</p>
+        </div>
+        <p>fim do exemplo</p>
+    </body>
+    </html>

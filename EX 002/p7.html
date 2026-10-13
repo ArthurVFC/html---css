@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas (E BORDAS)</title>
+
+    <style>
+        h1 {
+            background-color: rgb(245, 245, 118);
+            height: 300px; /*altura*/
+            width: 300px; /*largura*/
+
+            /*BORDER: borda (verde)*/
+            border: 10px solid darkslategray;
+
+            /*PADDING: espaço entre conteúdo e borda (parecido com HEIGHT E WODTH)*/
+            padding: 20px 20px 40px 20px; /*pode simplificar com 1 ou 2 valores*/
+
+            /*MARGIN: espaço fora da borda (parte em branco)
+            AUTO: deixa oque for no meio da tela.
+            Se fosse texto seria text align center
+            */
+            margin: 20px auto 40px auto;
+
+            /*OUTLINE: Espaço fora da borda*/
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color:salmon;
+        }
+            /**/
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        a.block {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>os links levam a outras páginas</h1>
+    <p><a href="index.html">página 1</a></p><p><a href="p2.html">página 2</a></p> <p><a href="p3.html"> página 3</a></p> <p><a href="p4.html"> página 4</a></p> <p><a href="p5.html">página 5</a></p><p><a href="p6.html">página 6</a></p> <p><a href="p7.html"> página 7</a></p> <p><a href="p8.html"> página 8</a></p> <p><a href="Site/p9.html"> página 9</a></p>
+
+    <h1>Exemplo de caixa box-level</h1>
+
+    <p>
+        Parágrafos também são exemplos de box-level, mas os
+        <a href="#">links são exemplos de caixas inline-level</a>.
+        Vamos ver como tudo isso funciona.
+    </p>
+    <p><a href="#" class="block">Exemplo de link se foisse display: block</a></p>
+    <p>A principal diferença é que DISPLAY BLOCK (padrão de H1) pega toda parte da tela, já o INLINE (padrão de link e texto) pega só a região onde está.<br>"Display:" muda a característica normal de um elemento.</p>
+</body>
+</html>
